@@ -23,6 +23,7 @@ out/
 vite.config.*.timestamp-*
 
 # ===== Tauri / Rust =====
+.cargo-home/
 src-tauri/target/
 target/
 **/*.rs.bk

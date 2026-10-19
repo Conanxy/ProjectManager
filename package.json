@@ -27,6 +27,7 @@
     "test:e2e-recurrence": "node scripts/e2e-recurrence.mjs",
     "tauri": "tauri",
     "icons": "tauri icon static/icon-manifest.json --ios-color \"#4f46e5\"",
+    "build:mac": "CARGO_HOME=\"$PWD/.cargo-home\" CARGO_TARGET_DIR=\"$PWD/src-tauri/target\" tauri build --bundles app,dmg",
     "build:win": "tauri build --runner cargo-xwin --target x86_64-pc-windows-msvc",
     "build:android": "pnpm icons && tauri android build --apk",
     "publish:update": "node scripts/publish-update.mjs",
